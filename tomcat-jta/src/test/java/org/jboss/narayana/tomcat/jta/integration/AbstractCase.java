@@ -166,7 +166,7 @@ public abstract class AbstractCase {
             tsDbSource.setAttribute("name", "transactionalDataSource");
             tsDbSource.setAttribute("uniqueName", "transactionalDataSource");
             tsDbSource.setAttribute("auth", "Container");
-            tsDbSource.setAttribute("type", db.tdsType);
+            tsDbSource.setAttribute("type", "javax.sql.XADataSource");
             tsDbSource.setAttribute("username", db.dsUser);
             tsDbSource.setAttribute("password", db.dsPassword);
             tsDbSource.setAttribute("transactionManager", "TransactionManager");
